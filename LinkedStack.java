@@ -19,14 +19,3 @@ public class LinkedStack<T> implements StackInterface<T> {
     return (T)top.getData();
   }
 }
-
-class Node<T> {
-  private T _data;
-  private Node _prev;
-  Node(T data, Node previous) {
-    _data = data;
-    _prev = previous;
-  }
-  public T getData() { return _data; }
-  public Node getLink() { return _prev; }
-}
